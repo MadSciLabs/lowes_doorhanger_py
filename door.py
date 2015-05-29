@@ -8,6 +8,8 @@ CLIENT_TAG = "20801160"
 HOUSEKEEPING_TAG = "3687842952"
 
 HOTEL_NUMBER = "9172078398"
+CLIENT_NUMBER = "9172078398"
+
  
 #get rfid from hid
 
@@ -33,7 +35,7 @@ while (True):
     client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN) 
 
     client.messages.create(
-      to=HOTEL_NUMBER, 
+      to=CLIENT_NUMBER, 
       from_="+12015499399", 
       body="We have cleaned room",  
     )
